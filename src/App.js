@@ -9,7 +9,7 @@ import Wobot from './images/wobot.png'
 import { useState } from "react";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={darkMode ? "dark bg-gray-900 text-white px-10" : "bg-white text-gray-900 px-10"}>
@@ -20,7 +20,7 @@ function App() {
             <li className="cursor-pointer text-2xl"
               onClick={() => setDarkMode(!darkMode)}><BsFillMoonStarsFill/></li>
             <li>
-              <a href="/Saurabh__CV.pdf" target="_blank" 
+              <a href="/SaurabhCV.pdf" target="_blank" 
                rel="noopener noreferrer" className="bg-gradient-to-r from-cyan-500 to-teal-600 text-white px-4 py-2 rounded ml-5">Resume</a>
             </li>
           </ul>
